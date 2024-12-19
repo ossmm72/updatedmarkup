@@ -1,0 +1,1189 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Logo and Text Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+/* Header Section */
+.header {
+    min-height: 100vh;
+    width: 100%;
+   /* background-image: url('/img/banner.jpg'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* Hover Effect on Nav Links */
+.nav-link ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ea8c00;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+
+/* Header Text Box */
+.text-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-family: Kenia;
+    font-size: 54px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Call-to-Action Button */
+.take-the-first {
+    background-color: #A37C45;
+    color: #ffffff;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center; 
+    line-height: 1.5; 
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 85%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.take-the-first:hover {
+    background-color: #6B5136;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-link ul li {
+        display: block;
+    }
+    .nav-link {
+        position: absolute;
+        background: #6B5136;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-link ul {
+        padding: 30px;
+    }
+}
+
+/* Hide Toggle Icons on Larger Screens */
+@media (min-width: 768px) {
+    .fa-bars, .fa-times {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .fa-bars, .fa-times {
+        display: block;
+        font-size: 22px;
+    }
+}
+
+/* Supporting Content Section */
+.Head {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* Layout for "Ways" Content */
+.row {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ways-col {
+    flex-basis: 31%;
+    background: #CBAD77;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 25px;
+    font-family: Kenia;
+}
+
+/* Hover Effect for "Ways" Columns */
+.ways-col:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design for "Ways" Columns */
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Tools & Tips Section */
+.tools-tips-section  {
+    background-color: #a38352;
+    padding: 40px;
+    margin: 0 15px 40px 15px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.tools-tips-section h1 ::first-letter {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.tools-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tool-box {
+    background-color: #e5e5d8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tool-box figcaption {
+    font-family: Kenia;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-top: 15px;
+    color: black;
+}
+
+.tool-box img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design for Tools Section */
+@media (max-width: 768px) {
+    .tools-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tool-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Results Section */
+.results-section {
+    background-color: #a38352;
+    padding: 20px;
+    margin: 0 15px 40px 15px;    
+    text-align: center;
+    border-radius: 100px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+}
+
+
+.results-table td {
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    vertical-align: top;
+}
+
+.results-title {
+    font-weight: bold;
+    color: white;
+}
+
+.results-table td strong {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+}
+
+.results-table td:not(.results-title) {
+    text-align: left;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #5C4B3A;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the footer content */
+    align-items: flex-start;
+}
+
+/* Main Footer Container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-around;
+    width: 25%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px; /* Add spacing between columns */
+}
+
+/* Logo and Social Icons Section */
+.footer-logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Add bottom margin for spacing on smaller screens */
+}
+
+.footer-logo {
+    width: 70px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center-align social icons */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffb100;
+}
+
+/* Footer Column Styling */
+.footer-column {
+    flex: 1 1 200px; /* Allows columns to wrap with a minimum width */
+    padding: 0 20px;
+    text-align: center;
+    min-width: 150px; /* Ensures columns don’t shrink too small */
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 16px; /* Increased size for better readability */
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px; /* Increased size for readability */
+}
+
+.footer-column > ul > li > a {
+    font-style: italic;
+}
+
+.footer-copyright {
+    font-size: 14px;             /* Make copyright text smaller */
+    color: #ffffff;              /* Adjust text color to fit the footer design */
+    margin-top: 5px;             /* Add slight spacing above the text */
+}
+
+
+.footer-column ul li a:hover {
+    color: #ffb100;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+    }
+
+    .footer-logo-social {
+        margin-bottom: 30px;
+    }
+
+    .footer-column {
+        padding: 10px 0;
+        margin-top: 20px; /* Add top margin for spacing between stacked columns */
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+/*                 CommuntiySuport */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Logo and Text Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+/* Header Section */
+.header {
+    min-height: 100vh;
+    width: 100%;
+   /* background-image: url('/img/meet.webp'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.9;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Hover Effect on Navigation Links */
+.nav-link ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ea8c00;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+
+/* Top Section for Community Support Page */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #B7A795;
+}
+
+.text-content {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.text-content h1 {
+    font-family: 'Kenia', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.text-content p, .text-content h2 {
+    font-size: 2em;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.text-content button {
+    background-color: #A37C45;
+    color: #ffffff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.text-content button:hover {
+    background-color: #6b5b46;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Community Support Section */
+.support-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #B7A795;
+}
+
+/* Support Item Styling */
+.support-item {
+    background-color: #B7A795;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Move Down Class */
+.move-down {
+    margin-top: 600px;
+}
+
+/* Support Item Content */
+.support-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.support-item h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin: 50px;
+}
+
+.support-item p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.support-item button {
+    background-color: #8c6b4f;
+    color: #ffffff;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.support-item button:hover {
+    background-color: #a47f5b;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding-right: 0;
+    }
+
+    .image-content {
+        margin-top: 20px;
+    }
+
+    .support-section {
+        flex-direction: column;
+    }
+
+    .support-item {
+        max-width: 100%;
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #5C4B3A;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the footer content */
+    align-items: flex-start;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-around;
+    width: 25%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px; /* Add spacing between columns */
+}
+
+/* Logo and Social Icons Section */
+.footer-logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Add bottom margin for spacing on smaller screens */
+}
+
+.footer-logo {
+    width: 70px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center-align social icons */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffb100;
+}
+
+/* Footer Column Styling */
+.footer-column {
+    flex: 1 1 200px; /* Allows columns to wrap with a minimum width */
+    padding: 0 20px;
+    text-align: center;
+    min-width: 150px; /* Ensures columns don’t shrink too small */
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 16px; /* Increased size for better readability */
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px; /* Increased size for readability */
+}
+
+.footer-column > ul > li > a {
+    font-style: italic;
+}
+
+.footer-copyright {
+    font-size: 14px;             /* Make copyright text smaller */
+    color: #ffffff;              /* Adjust text color to fit the footer design */
+    margin-top: 5px;             /* Add slight spacing above the text */
+}
+
+
+.footer-column ul li a:hover {
+    color: #ffb100;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+    }
+
+    .footer-logo-social {
+        margin-bottom: 30px;
+    }
+
+    .footer-column {
+        padding: 10px 0;
+        margin-top: 20px; /* Add top margin for spacing between stacked columns */
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+
+nd
+/*                    Methods CSS                     */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #B7A795;
+    margin: 0;
+  }
+  
+  /* Header Background Image 
+  .header {
+    background-image: url('/img/birmingham.webp'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));
+  }*/
+  
+  /* Quit Methods Section */
+  .quit-methods-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B7A795;
+    padding: 40px;
+  }
+  
+  /* Text Content Styling */
+  .text-content {
+    max-width: 60%;
+    color: #000000;
+  }
+  
+  .text-content h1 {
+    font-family: "Kenia", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .text-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f5f5f5;
+  }
+  
+  /* Image Styling */
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .quit-methods-section {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .text-content {
+        max-width: 100%;
+    }
+  
+    .image-content img {
+        margin-top: 20px;
+    }
+  }
+  
+  /* Method Container Grid */
+  .method-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #B7A795;
+  }
+  
+  /* Method Box Styling */
+  .method-box {
+    background-color: #7A5E4D;
+    padding: 100px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .method-box h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 100px;
+  }
+  
+  .method-box ul {
+    list-style-type: disc;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .method-box ul li {
+    margin-bottom: 10px;
+  }
+  
+  .method-box img {
+    max-width: 80px;
+    margin-bottom: 50px;
+  }
+  
+
+  /*          FAQ css                             */
+
+  /* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #B7A795;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    background-image: url('/img/Shelby-company-ltd-logo.jpg'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));
+}
+
+
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+    text-align: center;
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-family: "Kenia", sans-serif;
+}
+
+.hero p {
+    font-size: 1.5em;
+    max-width: 100%;
+    line-height: 2;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: #B7A795;
+    padding: 50px;
+    text-align: left;
+    color: #000000;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.faq h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* FAQ Item Styling */
+.faq-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.faq-item img {
+    width: 35px;
+    margin-right: 30px;
+}
+
+.faq-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+
+
+
+/*                  Teenager           */     
+
+/* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #B7A795;
+    margin: 0;
+}
+
+/* Header Styling */
+.header {
+    background-image: url('/img/teenager.webp'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('/img/teenager.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100vw;
+    color: #f8f8f8;
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    opacity: 0.7;
+}
+
+/*Overlay to Enhance Text Readability 
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    opacity: 0.7;
+}*/
+
+/* Hero Content Styles */
+.hero-content h1 {
+    font-family: "Kenia", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f8f8f8;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.hero-content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    /*line-height: 2em;*/
+    position: relative;
+    z-index: 2;
+    margin: 20px;
+}
+
+/* Three-Columns Section */
+.three-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #D3C4B5;
+    gap: 20px;
+}
+
+/* Column Style */
+.column {
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Column Heading */
+.column h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3A3A3A;
+    margin-bottom: 15px;
+}
+
+/* Column Paragraph */
+.column p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+
+    color: #3A3A3A;
+}
+
+
+.button {
+    background-color: #A37C45;
+    color: #ffffff;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center; 
+    line-height: 1.5; 
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 85%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.button:hover {
+    background-color: #6B5136;
+}
+
+/*           Contact              */
+.header {
+    background-image: url('/img/bg.png');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.contact-form h1 {
+    color: #000;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Kenia', cursive;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form input {
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    width: 90%;
+    height: 2vh;
+    background-color: #F5EEDC;
+}
+
+.form-field {
+    background: #A37C45;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.message-field {
+    background-color: #F5EEDC;
+    height: 18vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    font-size: 50px;
+}
+
+.form-control {
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #F5EEDC;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.submit-button {
+    background-color: #d3d3d3;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #b0b0b0;
+}

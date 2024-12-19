@@ -1,0 +1,440 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Logo and Text Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+/* Header Section */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/img/banner.jpg'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* Hover Effect on Nav Links */
+.nav-link ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ea8c00;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+
+/* Header Text Box */
+.text-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-family: Kenia;
+    font-size: 54px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Call-to-Action Button */
+.take-the-first {
+    background-color: #A37C45;
+    color: #ffffff;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center; 
+    line-height: 1.5; 
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 85%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.take-the-first:hover {
+    background-color: #6B5136;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-link ul li {
+        display: block;
+    }
+    .nav-link {
+        position: absolute;
+        background: #6B5136;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-link ul {
+        padding: 30px;
+    }
+}
+
+/* Hide Toggle Icons on Larger Screens */
+@media (min-width: 768px) {
+    .fa-bars, .fa-times {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .fa-bars, .fa-times {
+        display: block;
+        font-size: 22px;
+    }
+}
+
+/* Supporting Content Section */
+.Head {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* Layout for "Ways" Content */
+.row {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ways-col {
+    flex-basis: 31%;
+    background: #CBAD77;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 25px;
+    font-family: Kenia;
+}
+
+/* Hover Effect for "Ways" Columns */
+.ways-col:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design for "Ways" Columns */
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Tools & Tips Section */
+.tools-tips-section  {
+    background-color: #a38352;
+    padding: 40px;
+    margin: 0 15px 40px 15px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.tools-tips-section h1 ::first-letter {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.tools-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tool-box {
+    background-color: #e5e5d8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tool-box figcaption {
+    font-family: Kenia;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-top: 15px;
+    color: black;
+}
+
+.tool-box img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design for Tools Section */
+@media (max-width: 768px) {
+    .tools-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tool-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Results Section */
+.results-section {
+    background-color: #a38352;
+    padding: 20px;
+    margin: 0 15px 40px 15px;    
+    text-align: center;
+    border-radius: 100px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+}
+
+
+.results-table td {
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    vertical-align: top;
+}
+
+.results-title {
+    font-weight: bold;
+    color: white;
+}
+
+.results-table td strong {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+}
+
+.results-table td:not(.results-title) {
+    text-align: left;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #5C4B3A;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the footer content */
+    align-items: flex-start;
+}
+
+/* Main Footer Container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-around;
+    width: 25%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px; /* Add spacing between columns */
+}
+
+/* Logo and Social Icons Section */
+.footer-logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Add bottom margin for spacing on smaller screens */
+}
+
+.footer-logo {
+    width: 70px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center-align social icons */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffb100;
+}
+
+/* Footer Column Styling */
+.footer-column {
+    flex: 1 1 200px; /* Allows columns to wrap with a minimum width */
+    padding: 0 20px;
+    text-align: center;
+    min-width: 150px; /* Ensures columns don’t shrink too small */
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 16px; /* Increased size for better readability */
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px; /* Increased size for readability */
+}
+
+.footer-column > ul > li > a {
+    font-style: italic;
+}
+
+.footer-copyright {
+    font-size: 14px;             /* Make copyright text smaller */
+    color: #ffffff;              /* Adjust text color to fit the footer design */
+    margin-top: 5px;             /* Add slight spacing above the text */
+}
+
+
+.footer-column ul li a:hover {
+    color: #ffb100;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+    }
+
+    .footer-logo-social {
+        margin-bottom: 30px;
+    }
+
+    .footer-column {
+        padding: 10px 0;
+        margin-top: 20px; /* Add top margin for spacing between stacked columns */
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

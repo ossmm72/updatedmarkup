@@ -1,0 +1,335 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Logo and Text Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+/* Header Section */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/img/meet.webp'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.9;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Hover Effect on Navigation Links */
+.nav-link ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ea8c00;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+
+/* Top Section for Community Support Page */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #B7A795;
+}
+
+.text-content {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.text-content h1 {
+    font-family: 'Kenia', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.text-content p, .text-content h2 {
+    font-size: 2em;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.text-content button {
+    background-color: #A37C45;
+    color: #ffffff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.text-content button:hover {
+    background-color: #6b5b46;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Community Support Section */
+.support-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #B7A795;
+}
+
+/* Support Item Styling */
+.support-item {
+    background-color: #B7A795;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Move Down Class */
+.move-down {
+    margin-top: 600px;
+}
+
+/* Support Item Content */
+.support-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.support-item h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin: 50px;
+}
+
+.support-item p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.support-item button {
+    background-color: #8c6b4f;
+    color: #ffffff;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.support-item button:hover {
+    background-color: #a47f5b;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding-right: 0;
+    }
+
+    .image-content {
+        margin-top: 20px;
+    }
+
+    .support-section {
+        flex-direction: column;
+    }
+
+    .support-item {
+        max-width: 100%;
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #5C4B3A;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the footer content */
+    align-items: flex-start;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-around;
+    width: 25%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px; /* Add spacing between columns */
+}
+
+/* Logo and Social Icons Section */
+.footer-logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Add bottom margin for spacing on smaller screens */
+}
+
+.footer-logo {
+    width: 70px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center-align social icons */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffb100;
+}
+
+/* Footer Column Styling */
+.footer-column {
+    flex: 1 1 200px; /* Allows columns to wrap with a minimum width */
+    padding: 0 20px;
+    text-align: center;
+    min-width: 150px; /* Ensures columns don’t shrink too small */
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 16px; /* Increased size for better readability */
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px; /* Increased size for readability */
+}
+
+.footer-column > ul > li > a {
+    font-style: italic;
+}
+
+.footer-copyright {
+    font-size: 14px;             /* Make copyright text smaller */
+    color: #ffffff;              /* Adjust text color to fit the footer design */
+    margin-top: 5px;             /* Add slight spacing above the text */
+}
+
+
+.footer-column ul li a:hover {
+    color: #ffb100;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+    }
+
+    .footer-logo-social {
+        margin-bottom: 30px;
+    }
+
+    .footer-column {
+        padding: 10px 0;
+        margin-top: 20px; /* Add top margin for spacing between stacked columns */
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

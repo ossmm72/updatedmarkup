@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearAir - Methods to Quit Smoking</title>
+
+    <!-- External CSS Files 
+    <link rel="stylesheet" href="css/method.css">
+    <link rel="stylesheet" href="css/common.css">-->
+    <link rel="stylesheet" href="style.css"> 
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Montserrat:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header Section with Navigation -->
+    <header class="header">
+        <nav>
+            <!-- Logo with Text -->
+            <a href="homepage.html" class="logo-container">
+                <img src="img/logo.jpg" alt="Logo">
+                <span class="logo-text">ClearAir</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <section class="nav-link" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="csupport.html">Community Support</a></li>
+                    <li><a href="method.html">Methods to Quit Smoking</a></li>
+                    <li><a href="faq.html">FAQs & Tips</a></li>
+                    <li><a href="teenager.html">Resources for Teenagers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </section>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+   
+    <!-- Quit Methods Section -->
+    <section class="quit-methods-section">
+      <article class="text-content">
+          <h1>Effective Methods to Quit Smoking</h1>
+          <p>
+              Quitting smoking can be one of the most challenging but rewarding steps you take for your health. 
+              Whether you're looking for medical options like nicotine replacement therapy or more holistic approaches, 
+              this guide provides effective methods tailored to your needs. Explore resources that help reduce cravings, 
+              manage stress, and connect with a supportive community to ensure you're never alone on your journey to a smoke-free life.
+          </p>
+      </article>
+      <figure class="image-content">
+          <img src="img/birmingham.webp" alt="Methods to Quit Smoking">
+      </figure>
+  </section>
+  
+    </section>
+
+    <!-- Method Options -->
+    <section class="method-container">
+        <article class="method-box">
+            <img src="img/gum.png" alt="Nicotine replacement">
+            <h3>Use patches, gums, or lozenges to reduce cravings and manage withdrawal symptoms.</h3>
+            <ul>
+                <li>Gradually reduces nicotine dependence</li>
+                <li>Available over-the-counter</li>
+            </ul>
+        </article>
+      
+        <article class="method-box">
+            <img src="img/brain.png" alt="Therapist support">
+            <h3>Work with a therapist to change smoking habits and identify triggers.</h3>
+            <ul>
+                <li>Tailored to your needs</li>
+                <li>Helps address psychological aspects of addiction</li>
+            </ul>
+        </article>
+      
+        <article class="method-box">
+            <img src="img/tonic.png" alt="Medications">
+            <h3>Medications like Bupropion or Varenicline help reduce nicotine cravings and withdrawal effects.</h3>
+            <ul>
+                <li>Clinically proven to improve success rates</li>
+                <li>Reduces cravings and withdrawal symptoms</li>
+            </ul>
+        </article>
+      
+        <article class="method-box">
+            <img src="img/no-smoking.png" alt="Cold turkey">
+            <h3>Stop smoking immediately without aids, focusing on willpower and mental strength.</h3>
+            <ul>
+                <li>Immediate cessation</li>
+                <li>No additional costs</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <section class="footer-container">
+          <!-- Existing footer content -->
+          <section class="footer-logo-social">
+              <img src="img/logo.jpg" alt="ClearAir Logo" class="footer-logo">
+              <section class="social-icons">
+                  <a href="INSTA"><i class="fa fa-instagram"></i></a>
+                  <a href="UTUBE"><i class="fa fa-youtube-play"></i></a>
+                  <a href="TWETT"><i class="fa fa-twitter"></i></a>
+              </section>
+              <p class="footer-copyright">&copy; 2024 ClearAir. All rights reserved.</p>
+          </section>
+         
+      </section>
+    
+          <!-- Links to Support Groups -->
+          <section class="footer-column">
+            <h3>Explore Support Groups</h3>
+            <ul>
+              <li><a href="#">Local Support Groups</a></li>
+              <li><a href="#">Online Communities</a></li>
+              <li><a href="#">Find a Quit Partner</a></li>
+              <li><a href="#">Stories from Ex-Smokers</a></li>
+              <li><a href="#">Peer-to-Peer Counseling</a></li>
+            </ul>
+          </section>
+    
+          <!-- Links to Best Practices -->
+          <section class="footer-column">
+            <h3>Best Practices</h3>
+            <ul>
+              <li><a href="#">Quit Smoking Tips</a></li>
+              <li><a href="#">Managing Cravings</a></li>
+              <li><a href="#">Healthy Substitutes</a></li>
+              <li><a href="#">Staying Smoke-Free</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+    
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+    
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+    
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+    </html>
+    

@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #B7A795;
+  margin: 0;
+}
+
+/* Header Background Image */
+.header {
+  background-image: url('/img/birmingham.webp'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));
+}
+
+/* Quit Methods Section */
+.quit-methods-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B7A795;
+  padding: 40px;
+}
+
+/* Text Content Styling */
+.text-content {
+  max-width: 60%;
+  color: #000000;
+}
+
+.text-content h1 {
+  font-family: "Kenia", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.text-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #f5f5f5;
+}
+
+/* Image Styling */
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quit-methods-section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-content {
+      max-width: 100%;
+  }
+
+  .image-content img {
+      margin-top: 20px;
+  }
+}
+
+/* Method Container Grid */
+.method-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #B7A795;
+}
+
+/* Method Box Styling */
+.method-box {
+  background-color: #7A5E4D;
+  padding: 100px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.method-box h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.method-box ul {
+  list-style-type: disc;
+  padding: 0;
+  font-size: 1em;
+}
+
+.method-box ul li {
+  margin-bottom: 10px;
+}
+
+.method-box img {
+  max-width: 80px;
+  margin-bottom: 50px;
+}

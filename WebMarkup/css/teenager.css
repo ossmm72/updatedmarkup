@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #B7A795;
+    margin: 0;
+}
+
+/* Header Styling */
+.header {
+    background-image: url('/img/teenager.webp'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('/img/teenager.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100vw;
+    color: #f8f8f8;
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    opacity: 0.7;
+}
+
+/*Overlay to Enhance Text Readability 
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    opacity: 0.7;
+}*/
+
+/* Hero Content Styles */
+.hero-content h1 {
+    font-family: "Kenia", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f8f8f8;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.hero-content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    /*line-height: 2em;*/
+    position: relative;
+    z-index: 2;
+    margin: 20px;
+}
+
+/* Three-Columns Section */
+.three-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #D3C4B5;
+    gap: 20px;
+}
+
+/* Column Style */
+.column {
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Column Heading */
+.column h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3A3A3A;
+    margin-bottom: 15px;
+}
+
+/* Column Paragraph */
+.column p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+
+    color: #3A3A3A;
+}
+
+
+.button {
+    background-color: #A37C45;
+    color: #ffffff;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center; 
+    line-height: 1.5; 
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 85%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.button:hover {
+    background-color: #6B5136;
+}

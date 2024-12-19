@@ -1,0 +1,71 @@
+/* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #B7A795;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    background-image: url('/img/Shelby-company-ltd-logo.jpg'), linear-gradient(rgba(166,144,104), rgba(92, 75, 58));
+}
+
+
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+    text-align: center;
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-family: "Kenia", sans-serif;
+}
+
+.hero p {
+    font-size: 1.5em;
+    max-width: 100%;
+    line-height: 2;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: #B7A795;
+    padding: 50px;
+    text-align: left;
+    color: #000000;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.faq h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* FAQ Item Styling */
+.faq-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.faq-item img {
+    width: 35px;
+    margin-right: 30px;
+}
+
+.faq-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #f5f5f5;
+}

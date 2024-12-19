@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ClearAir</title>
+
+    <!-- Google Fonts (Montserrshit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kenia&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font for Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- CSS 
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Header Section with Navigation -->
+    <section class="header">
+        <nav>
+            <!-- Logo with Text -->
+            <a href="homepage.html" class="logo-container">
+              <img src="img/logo.jpg" alt="Logo">
+              <span class="logo-text">ClearAir</span>
+            </a>
+          
+            <!-- Navigation Links -->
+            <section class="nav-link" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="csupport.html">Community Support</a></li>
+                <li><a href="method.html">Methods to Quit Smoking</a></li>
+                <li><a href="faq.html">FAQs & Tips</a></li>
+                <li><a href="teenager.html">Resources for Teenagers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </section>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+
+    <main>
+        
+        <section class="contact-section">
+            <form class="contact-form">
+                <h1>Get In Touch</h1>
+        
+                <fieldset class="form-field">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name">
+        
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name">
+                </fieldset>
+        
+                <fieldset class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+      
+                <fieldset class="form-field">
+                    <label for="gender">Gender (Mr/Mrs/Nonbinary):</label>
+                    <select id="gender" name="gender" class="form-control">
+                        <option value="">Select your gender</option> <!-- Placeholder option -->
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="nonbinary">Nonbinary</option>
+                    </select>
+                </fieldset>
+        
+                <fieldset class="form-field">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+        
+                <fieldset class="form-field">
+                    <label for="subject">Subject (Optional):</label>
+                    <input type="text" id="subject" name="subject">
+                </fieldset>
+        
+                <fieldset class="form-field">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </fieldset>
+                <fieldset class="form-field">
+                    <label for="marital-status">Marital Status:</label>
+                    <select id="marital-status" name="marital-status" class="form-control">
+                        <option value="">Select marital status</option> <!-- Placeholder option -->
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </fieldset>
+        
+                <fieldset class="form-field">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="message-field"></textarea>
+                </fieldset>
+        
+            </form>
+        </section>
+        
+    
+<section class="button-container">
+    <button type="submit" class="submit-button">Submit</button>
+</section>
+            </form>
+        </section>
+    </main>
+
+     <!-- Footer Section -->
+     <footer class="footer">
+      <section class="footer-container">
+        <!-- Existing footer content -->
+        <section class="footer-logo-social">
+            <img src="img/logo.jpg" alt="ClearAir Logo" class="footer-logo">
+            <section class="social-icons">
+                <a href="INSTA"><i class="fa fa-instagram"></i></a>
+                <a href="UTUBE"><i class="fa fa-youtube-play"></i></a>
+                <a href="TWETT"><i class="fa fa-twitter"></i></a>
+            </section>
+            <p class="footer-copyright">&copy; 2024 ClearAir. All rights reserved.</p>
+        </section>
+       
+    </section>
+
+        <!-- Links to Support Groups -->
+        <section class="footer-column">
+          <h3>Explore Support Groups</h3>
+          <ul>
+            <li><a href="#">Local Support Groups</a></li>
+            <li><a href="#">Online Communities</a></li>
+            <li><a href="#">Find a Quit Partner</a></li>
+            <li><a href="#">Stories from Ex-Smokers</a></li>
+            <li><a href="#">Peer-to-Peer Counseling</a></li>
+          </ul>
+        </section>
+
+        <!-- Links to Best Practices -->
+        <section class="footer-column">
+          <h3>Best Practices</h3>
+          <ul>
+            <li><a href="#">Quit Smoking Tips</a></li>
+            <li><a href="#">Managing Cravings</a></li>
+            <li><a href="#">Healthy Substitutes</a></li>
+            <li><a href="#">Staying Smoke-Free</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
